@@ -32,6 +32,7 @@ function letsTry() {
     dollar.value = 12;
     slider.style.background =
       "linear-gradient( to right, #a4f3eb 0%, #a4f3eb 25%, #ecf0fb 0%, #ecf0fb 100% )";
+      onlyActive();
   } else if (slider.value == "16") {
     pageViews.innerHTML = "100K PAGEVIEWS";
     dollar.innerHTML = "$16.00";
