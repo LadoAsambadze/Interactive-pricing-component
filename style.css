@@ -1,0 +1,363 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope";
+  font-style: normal;
+}
+
+body {
+  width: 100%;
+  min-height: 100%;
+  background-image: url(./images/bg-pattern.svg);
+  background-repeat: no-repeat;
+}
+.main {
+  width: 100%;
+  height: 100%;
+  background-image: url(./images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  padding: 89px 24px 48px 24px;
+  background-position: center top 57px;
+}
+h1 {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+  color: #293356;
+}
+.thirty {
+  width: 100%;
+  padding-left: 23%;
+  padding-right: 23%;
+  margin-top: 8px;
+}
+
+.thirty-text {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 23px;
+  text-align: center;
+  color: #848ead;
+}
+.main-div {
+  width: 100%;
+  margin-top: 64px;
+  background-color: white;
+  box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
+  border-radius: 8px;
+  padding: 32px 12px 32px 24px;
+  position: relative;
+}
+
+.pageviews {
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 1.71429px;
+  text-transform: uppercase;
+  color: #848ead;
+}
+.range {
+  width: 100%;
+  margin-top: 41px;
+}
+#rangeInput {
+  background: #ecf0fb;
+  border-radius: 8px;
+  height: 8px;
+  width: 100%;
+  outline: none;
+  -webkit-appearance: none;
+  cursor: grab;
+  background: linear-gradient(
+    to right,
+    #a4f3eb 0%,
+    #a4f3eb 50%,
+    #ecf0fb 0%,
+    #ecf0fb 100%
+  );
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 40px;
+  height: 40px;
+  border: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+
+  border: none;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background: #10d8c4;
+  box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+  background-image: url(./images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.range input[type="range"]::-webkit-slider-thumb:active {
+  background-color: #0caa9b !important;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+input[type="range"]:focus {
+  outline: none;
+}
+.price {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 24px;
+}
+.dollar {
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: right;
+  letter-spacing: -0.8px;
+  color: #293356;
+}
+.month {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  color: #848ead;
+  margin-left: 10px;
+}
+.button-click {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 34px;
+}
+.bill {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #848ead;
+}
+.discount {
+  font-weight: 800;
+  font-size: 10px;
+  line-height: 14px;
+  text-align: center;
+  color: #ff8d68;
+}
+
+.line {
+  height: 1px;
+  background-color: #ecf0fb;
+  width: 100%;
+  margin-top: 38px;
+}
+
+.benefits {
+  margin-top: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.checked {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 11px;
+}
+.benefit-text {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #848ead;
+  margin-left: 16px;
+}
+.benefit-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 33px;
+}
+.start-trial {
+  padding: 12px 46px 12px 46px;
+  background-color: #293356;
+  border-radius: 20.5px;
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #becdff;
+  border: none;
+  cursor: pointer;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 43px;
+  height: 22px;
+  background-color: #cfd8ef;
+  border-radius: 15px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  -webkit-transition: 0.4s;
+  transition: 0.4 s;
+  background-color: #cfd8ef;
+  border-radius: 15px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+
+  transition: 0.4s;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+input:checked + .slider {
+  background-color: #7aeadf;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+.price-mobile,
+.discount-desktop {
+  display: none;
+}
+@media screen and (min-width: 1440px) {
+  body {
+    background-size: 100%;
+  }
+  .main {
+    padding: 104px 450px 137px 450px;
+  }
+  h1 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  .thirty {
+    margin-top: 12px;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+  .thirty-text {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .main-div {
+    margin-top: 92px;
+    padding: 40px 48px 33px 48px;
+  }
+  .hidden {
+    display: none;
+  }
+  .starting-div {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .pageviews {
+    margin-left: 3px;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  .price {
+    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+  }
+  .dollar {
+    font-size: 40px;
+    line-height: 55px;
+    text-align: right;
+    letter-spacing: -1px;
+  }
+  .month {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .range {
+    margin-top: 40px;
+  }
+  .button-click {
+    padding-left: 25%;
+    padding-right: 10%;
+  }
+  .discount-desktop {
+    font-weight: 800;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    color: #ff8d68;
+    background: #feede8;
+    border-radius: 9.5px;
+    padding: 3px 7px 3px 7px;
+  }
+  .discount {
+    display: none;
+  }
+  .footer-elements {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+  }
+  .benefit-text {
+    margin-left: 16px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .benefit-button {
+    margin: 0;
+  }
+  .start-trial {
+    margin: 0;
+    padding: 12px 46px 12px 46px;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+  }
+  .benefits {
+    align-items: flex-start;
+  }
+}
